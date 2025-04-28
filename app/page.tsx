@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image from "next/image";
 import {
   ArrowRight,
   Github,
@@ -12,30 +12,30 @@ import {
   Cpu,
   Zap,
   ChevronRight,
-} from "lucide-react"
-import { Button } from "@/components/ui/button"
-import { SocialIcons } from "@/components/social-icons"
-import { StarField } from "@/components/star-field"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { ScrollAnimation } from "@/components/scroll-animation"
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { SocialIcons } from "@/components/social-icons";
+import { StarField } from "@/components/star-field";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { ScrollAnimation } from "@/components/scroll-animation";
 
 const projects = [
   {
     id: 1,
-    title: "Chess.com Clone",
+    title: "Gemini Clone",
     description:
-      "A fully functional clone of Chess.com with multiplayer capabilities, game analysis, and user profiles.",
-    github: "https://github.com/sharmaxkartik/Chess.com-Clone",
-    demo: "https://chess-clone.vercel.app",
+      "A fully functional clone of Google's Gemini AI, showcasing advanced features of text analysis.",
+    github: "",
+    demo: "/",
   },
   {
     id: 2,
-    title: "Apple MacBook Pro Landing Page",
+    title: "Barterly",
     description:
-      "A pixel-perfect recreation of Apple's MacBook Pro landing page with smooth animations and responsive design.",
-    github: "https://github.com/sharmaxkartik/Apple-Macbook-Pro-Landing-Page",
-    demo: "https://apple-macbook-landing.vercel.app",
+      "Barterly is a MERN stack web application that enables people to trade skills instead of money. Users can offer their expertise (like graphic design, coding, marketing) and request help in other areas in return. It’s a community-driven platform where every hour you give earns you an hour to learn.",
+    github: "https://github.com/sharmaxkartik/Barterly",
+    demo: "https://barterly-steel.vercel.app/",
   },
   {
     id: 3,
@@ -53,7 +53,7 @@ const projects = [
     github: "https://github.com/sharmaxkartik/WE-Work-Earn-",
     demo: "https://we-work-earn.vercel.app",
   },
-]
+];
 
 export default function Home() {
   return (
@@ -71,12 +71,15 @@ export default function Home() {
                 </div>
               </ScrollAnimation>
               <ScrollAnimation type="slide" direction="left" delay={0.1}>
-                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">Kartik Sharma</h1>
+                <h1 className="text-4xl font-bold tracking-tight sm:text-5xl md:text-6xl">
+                  Kartik Sharma
+                </h1>
               </ScrollAnimation>
               <ScrollAnimation type="slide" direction="left" delay={0.2}>
                 <p className="text-xl text-muted-foreground">
-                  Building innovative digital solutions with modern technologies. Specializing in full-stack development
-                  and creating seamless user experiences.
+                  Building innovative digital solutions with modern
+                  technologies. Specializing in full-stack development and
+                  creating seamless user experiences.
                 </p>
               </ScrollAnimation>
               <ScrollAnimation type="slide" direction="left" delay={0.3}>
@@ -147,7 +150,8 @@ export default function Home() {
             <div className="flex items-center mb-16">
               <div className="h-px flex-1 bg-gradient-to-r from-transparent to-primary/50"></div>
               <h1 className="text-center text-4xl font-bold tracking-tight px-6">
-                <span className="text-primary">&lt;</span> About <span className="text-primary">/&gt;</span>
+                <span className="text-primary">&lt;</span> About{" "}
+                <span className="text-primary">/&gt;</span>
               </h1>
               <div className="h-px flex-1 bg-gradient-to-l from-transparent to-primary/50"></div>
             </div>
@@ -163,7 +167,9 @@ export default function Home() {
                     <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
                     <div className="w-3 h-3 rounded-full bg-green-500"></div>
                   </div>
-                  <div className="flex-1 text-center text-sm text-primary/70">kartik@portfolio ~ about.sh</div>
+                  <div className="flex-1 text-center text-sm text-primary/70">
+                    kartik@portfolio ~ about.sh
+                  </div>
                 </div>
                 <div className="p-6 font-mono text-sm leading-relaxed">
                   <div className="flex items-start mb-4">
@@ -171,9 +177,10 @@ export default function Home() {
                     <span className="typing-animation">whoami</span>
                   </div>
                   <p className="mb-4 pl-4 text-primary/90">
-                    I'm Kartik Sharma, a passionate full-stack developer with expertise in MERN stack and Java
-                    programming. With a strong foundation in both front-end and back-end technologies, I create
-                    efficient, scalable, and user-friendly applications.
+                    I'm Kartik Sharma, a passionate full-stack developer with
+                    expertise in MERN stack and Java programming. With a strong
+                    foundation in both front-end and back-end technologies, I
+                    create efficient, scalable, and user-friendly applications.
                   </p>
 
                   <div className="flex items-start mb-4">
@@ -181,10 +188,12 @@ export default function Home() {
                     <span className="typing-animation">cat journey.txt</span>
                   </div>
                   <p className="mb-4 pl-4 text-primary/90">
-                    My journey in software development began during my college years, where I quickly distinguished
-                    myself by winning multiple hackathons and ideathons in my first year. These experiences taught me
-                    how to work effectively under pressure, collaborate with diverse teams, and deliver innovative
-                    solutions to complex problems.
+                    My journey in software development began during my college
+                    years, where I quickly distinguished myself by winning
+                    multiple hackathons and ideathons in my first year. These
+                    experiences taught me how to work effectively under
+                    pressure, collaborate with diverse teams, and deliver
+                    innovative solutions to complex problems.
                   </p>
 
                   <div className="flex items-start mb-4">
@@ -192,9 +201,10 @@ export default function Home() {
                     <span className="typing-animation">cat approach.txt</span>
                   </div>
                   <p className="mb-4 pl-4 text-primary/90">
-                    I approach each project with a focus on clean code, performance optimization, and intuitive user
-                    experience. My goal is to build applications that not only meet technical requirements but also
-                    exceed user expectations.
+                    I approach each project with a focus on clean code,
+                    performance optimization, and intuitive user experience. My
+                    goal is to build applications that not only meet technical
+                    requirements but also exceed user expectations.
                   </p>
                 </div>
               </div>
@@ -218,19 +228,25 @@ export default function Home() {
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Cpu className="h-5 w-5 text-primary" />
                     </div>
-                    <h3 className="text-xl font-medium text-primary">Frontend</h3>
+                    <h3 className="text-xl font-medium text-primary">
+                      Frontend
+                    </h3>
                   </div>
                   <ul className="space-y-4">
-                    {["React.js", "Next.js", "HTML5 & CSS3", "JavaScript/TypeScript", "Tailwind CSS"].map(
-                      (skill, index) => (
-                        <li key={skill} className="flex items-center group">
-                          <div className="w-1 h-1 bg-primary rounded-full mr-3 group-hover:w-2 transition-all duration-300"></div>
-                          <div className="flex-1 py-2 px-3 bg-primary/5 rounded-md group-hover:bg-primary/10 transition-colors">
-                            {skill}
-                          </div>
-                        </li>
-                      ),
-                    )}
+                    {[
+                      "React.js",
+                      "Next.js",
+                      "HTML5 & CSS3",
+                      "JavaScript/TypeScript",
+                      "Tailwind CSS",
+                    ].map((skill, index) => (
+                      <li key={skill} className="flex items-center group">
+                        <div className="w-1 h-1 bg-primary rounded-full mr-3 group-hover:w-2 transition-all duration-300"></div>
+                        <div className="flex-1 py-2 px-3 bg-primary/5 rounded-md group-hover:bg-primary/10 transition-colors">
+                          {skill}
+                        </div>
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </ScrollAnimation>
@@ -241,10 +257,19 @@ export default function Home() {
                     <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mr-4">
                       <Terminal className="h-5 w-5 text-primary" />
                     </div>
-                    <h3 className="text-xl font-medium text-primary">Backend</h3>
+                    <h3 className="text-xl font-medium text-primary">
+                      Backend
+                    </h3>
                   </div>
                   <ul className="space-y-4">
-                    {["Node.js", "Express.js", "MongoDB", "Java", "RESTful APIs", "Firebase"].map((skill, index) => (
+                    {[
+                      "Node.js",
+                      "Express.js",
+                      "MongoDB",
+                      "Java",
+                      "RESTful APIs",
+                      "Firebase",
+                    ].map((skill, index) => (
                       <li key={skill} className="flex items-center group">
                         <div className="w-1 h-1 bg-primary rounded-full mr-3 group-hover:w-2 transition-all duration-300"></div>
                         <div className="flex-1 py-2 px-3 bg-primary/5 rounded-md group-hover:bg-primary/10 transition-colors">
@@ -278,10 +303,12 @@ export default function Home() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                       <Award className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-medium mb-3">Inter-College Hackathon Winner</h3>
+                    <h3 className="text-xl font-medium mb-3">
+                      Inter-College Hackathon Winner
+                    </h3>
                     <p className="text-muted-foreground">
-                      First place in the annual tech hackathon, developing an innovative solution for sustainable energy
-                      tracking.
+                      First place in the annual tech hackathon, developing an
+                      innovative solution for sustainable energy tracking.
                     </p>
                   </div>
                 </div>
@@ -296,9 +323,12 @@ export default function Home() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                       <Zap className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-medium mb-3">Ideathon Champion</h3>
+                    <h3 className="text-xl font-medium mb-3">
+                      Ideathon Champion
+                    </h3>
                     <p className="text-muted-foreground">
-                      Recognized for the most creative and feasible business idea at the college ideathon competition.
+                      Recognized for the most creative and feasible business
+                      idea at the college ideathon competition.
                     </p>
                   </div>
                 </div>
@@ -313,10 +343,12 @@ export default function Home() {
                     <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4">
                       <Github className="h-6 w-6 text-primary" />
                     </div>
-                    <h3 className="text-xl font-medium mb-3">Open Source Contributor</h3>
+                    <h3 className="text-xl font-medium mb-3">
+                      Open Source Contributor
+                    </h3>
                     <p className="text-muted-foreground">
-                      Active contributor to several open-source projects, helping improve documentation and adding new
-                      features.
+                      Active contributor to several open-source projects,
+                      helping improve documentation and adding new features.
                     </p>
                   </div>
                 </div>
@@ -336,7 +368,11 @@ export default function Home() {
 
             <div className="space-y-6">
               {[
-                { title: "Career Essentials in Generative AI", issuer: "Microsoft and LinkedIn", year: "2024" },
+                {
+                  title: "Career Essentials in Generative AI",
+                  issuer: "Microsoft and LinkedIn",
+                  year: "2024",
+                },
                 {
                   title: "TechTrek24 Hackathon",
                   issuer: "Institute of Technology and Management, Gwalior",
@@ -347,8 +383,16 @@ export default function Home() {
                   issuer: "Institute of Technology and Management, Gwalior",
                   year: "2024",
                 },
-                { title: "Introduction to Generative AI", issuer: "Google Cloud Skill Boost", year: "2024" },
-                { title: "Generative AI Certificates", issuer: "LinkedIn", year: "2024" },
+                {
+                  title: "Introduction to Generative AI",
+                  issuer: "Google Cloud Skill Boost",
+                  year: "2024",
+                },
+                {
+                  title: "Generative AI Certificates",
+                  issuer: "LinkedIn",
+                  year: "2024",
+                },
               ].map((cert, index) => (
                 <ScrollAnimation
                   key={index}
@@ -368,7 +412,9 @@ export default function Home() {
                             <h3 className="text-xl font-medium group-hover:text-primary transition-colors">
                               {cert.title}
                             </h3>
-                            <p className="text-muted-foreground mt-1">{cert.issuer}</p>
+                            <p className="text-muted-foreground mt-1">
+                              {cert.issuer}
+                            </p>
                           </div>
                         </div>
                         <div className="md:text-right">
@@ -387,7 +433,10 @@ export default function Home() {
       </section>
 
       {/* Projects Section - Completely Redesigned */}
-      <section id="projects" className="py-16 md:py-24 relative overflow-hidden">
+      <section
+        id="projects"
+        className="py-16 md:py-24 relative overflow-hidden"
+      >
         {/* Tech-inspired background elements */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-0 left-0 w-full h-full">
@@ -413,7 +462,8 @@ export default function Home() {
             <div className="flex items-center mb-16">
               <div className="h-px flex-1 bg-gradient-to-r from-transparent to-primary/50"></div>
               <h1 className="text-center text-4xl font-bold tracking-tight px-6">
-                <span className="text-primary">&lt;</span> Projects <span className="text-primary">/&gt;</span>
+                <span className="text-primary">&lt;</span> Projects{" "}
+                <span className="text-primary">/&gt;</span>
               </h1>
               <div className="h-px flex-1 bg-gradient-to-l from-transparent to-primary/50"></div>
             </div>
@@ -422,14 +472,20 @@ export default function Home() {
           <div className="mx-auto max-w-5xl">
             <div className="grid grid-cols-1 gap-12">
               {projects.map((project, index) => (
-                <ScrollAnimation key={project.id} type="slide" direction={index % 2 === 0 ? "left" : "right"}>
+                <ScrollAnimation
+                  key={project.id}
+                  type="slide"
+                  direction={index % 2 === 0 ? "left" : "right"}
+                >
                   <div className="bg-black/40 backdrop-blur-sm border border-primary/20 rounded-lg overflow-hidden group relative">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500"></div>
                     <div className="absolute -inset-1 bg-gradient-to-r from-primary/0 via-primary/30 to-primary/0 opacity-0 group-hover:opacity-100 blur-lg transition-all duration-500"></div>
 
                     <div className="p-8 relative z-10">
                       <div className="flex items-center mb-4">
-                        <h2 className="text-3xl font-bold text-primary mr-4">{project.title}</h2>
+                        <h2 className="text-3xl font-bold text-primary mr-4">
+                          {project.title}
+                        </h2>
                         <a
                           href={project.demo}
                           target="_blank"
@@ -441,7 +497,9 @@ export default function Home() {
                         </a>
                       </div>
 
-                      <p className="text-lg text-muted-foreground mb-6">{project.description}</p>
+                      <p className="text-lg text-muted-foreground mb-6">
+                        {project.description}
+                      </p>
 
                       <a
                         href={project.github}
@@ -478,7 +536,8 @@ export default function Home() {
             <div className="flex items-center mb-16">
               <div className="h-px flex-1 bg-gradient-to-r from-transparent to-primary/50"></div>
               <h1 className="text-center text-4xl font-bold tracking-tight px-6">
-                <span className="text-primary">&lt;</span> Contact <span className="text-primary">/&gt;</span>
+                <span className="text-primary">&lt;</span> Contact{" "}
+                <span className="text-primary">/&gt;</span>
               </h1>
               <div className="h-px flex-1 bg-gradient-to-l from-transparent to-primary/50"></div>
             </div>
@@ -501,13 +560,17 @@ export default function Home() {
                       </div>
                       <div>
                         <h3 className="text-xl font-medium mb-2">Email</h3>
-                        <p className="text-lg text-primary">kartikgwl13@gmail.com</p>
+                        <p className="text-lg text-primary">
+                          kartikgwl13@gmail.com
+                        </p>
                       </div>
                     </div>
                   </div>
 
                   <div className="mt-12">
-                    <h3 className="text-xl font-medium mb-6">Connect with me</h3>
+                    <h3 className="text-xl font-medium mb-6">
+                      Connect with me
+                    </h3>
                     <SocialIcons iconSize={24} />
                   </div>
                 </div>
@@ -525,15 +588,38 @@ export default function Home() {
                       <span className="ml-2 text-primary animate-blink">_</span>
                     </h2>
 
-                    <form action="https://api.web3forms.com/submit" method="POST" className="space-y-6">
-                      <input type="hidden" name="access_key" value="18e46bdc-e2c4-4fd8-8f50-873b3be507dc" />
-                      <input type="hidden" name="subject" value="New message from portfolio website" />
-                      <input type="hidden" name="from_name" value="Portfolio Contact Form" />
-                      <input type="checkbox" name="botcheck" className="hidden" style={{ display: "none" }} />
+                    <form
+                      action="https://api.web3forms.com/submit"
+                      method="POST"
+                      className="space-y-6"
+                    >
+                      <input
+                        type="hidden"
+                        name="access_key"
+                        value="18e46bdc-e2c4-4fd8-8f50-873b3be507dc"
+                      />
+                      <input
+                        type="hidden"
+                        name="subject"
+                        value="New message from portfolio website"
+                      />
+                      <input
+                        type="hidden"
+                        name="from_name"
+                        value="Portfolio Contact Form"
+                      />
+                      <input
+                        type="checkbox"
+                        name="botcheck"
+                        className="hidden"
+                        style={{ display: "none" }}
+                      />
 
                       <div className="space-y-6">
                         <div className="group">
-                          <label className="text-sm font-medium text-primary/70 mb-2 block">Your Name</label>
+                          <label className="text-sm font-medium text-primary/70 mb-2 block">
+                            Your Name
+                          </label>
                           <Input
                             name="name"
                             required
@@ -541,7 +627,9 @@ export default function Home() {
                           />
                         </div>
                         <div className="group">
-                          <label className="text-sm font-medium text-primary/70 mb-2 block">Your Email</label>
+                          <label className="text-sm font-medium text-primary/70 mb-2 block">
+                            Your Email
+                          </label>
                           <Input
                             name="email"
                             type="email"
@@ -550,7 +638,9 @@ export default function Home() {
                           />
                         </div>
                         <div className="group">
-                          <label className="text-sm font-medium text-primary/70 mb-2 block">Subject</label>
+                          <label className="text-sm font-medium text-primary/70 mb-2 block">
+                            Subject
+                          </label>
                           <Input
                             name="subject"
                             required
@@ -558,7 +648,9 @@ export default function Home() {
                           />
                         </div>
                         <div className="group">
-                          <label className="text-sm font-medium text-primary/70 mb-2 block">Your Message</label>
+                          <label className="text-sm font-medium text-primary/70 mb-2 block">
+                            Your Message
+                          </label>
                           <Textarea
                             name="message"
                             required
@@ -585,6 +677,5 @@ export default function Home() {
         </div>
       </section>
     </>
-  )
+  );
 }
-
